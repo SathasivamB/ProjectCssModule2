@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Accessibility and CSS Assignment" />
+    <title>CSS Accessibility Assignment</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Skip to Main Content -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Instructions</a></li>
+            <li><a href="submission.html">My Submission</a></li>
+            <li><a href="discussions.html">Discussions</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main id="main-content">
+        <section>
+            <h1>Instructions</h1>
+            <p>
+                The goal of this assignment is to provide additional practice styling your website.
+                Your job is to modify some existing CSS rules and add new ones. To improve
+                accessibility, you will also add a "Skip to Main Content" capability to each page.
+                While creating your style, make sure to run the page through the
+                <a href="https://wave.webaim.org/" target="_blank">Wave validator</a> to check for
+                color contrast errors.
+            </p>
+        </section>
+
+        <section>
+            <h2>Grading Criteria Overview</h2>
+            <p>
+                Your project will be graded by the careful examination of your code by a peer as well
+                as the
+                <a href="https://validator.w3.org/" target="_blank">The W3C Markup Validation Service Tool</a>
+                and the
+                <a href="https://wave.webaim.org/" target="_blank">WAVE Web Accessibility Evaluation Tool</a>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Instructions</h2>
+            <ol>
+                <li>Create a NEW copy of your work from Homework 1.</li>
+                <li>
+                    Add a working "Skip to Main Content" link to each page by adding an ID to the
+                    main tag and then adding an anchor (a tag) earlier in the file that links to it.
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CSS Accessibility Assignment. All rights reserved.</p>
+    </footer>
+</body>
+</html>
