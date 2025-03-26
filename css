@@ -3,9 +3,117 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Accessibility and CSS Assignment" />
-    <title>CSS Accessibility Assignment</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="Advanced Selectors and Display Assignment" />
+    <title>Advanced Selectors and Display</title>
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Skip to Main Content Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            z-index: 100;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #0073e6;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        /* Commenting out li styling */
+        /* li {
+            display: inline-block;
+            margin-right: 15px;
+        } */
+
+        nav li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: #005bb5;
+            border-radius: 5px;
+        }
+
+        /* Inline-block and width for nav */
+        nav {
+            display: inline-block;
+            width: 80%;
+        }
+
+        /* Descendent selector to style only the image in nav */
+        nav img {
+            width: 10%;
+        }
+
+        /* Grid Class for Two-Column Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .grid img {
+            width: 100%;
+        }
+
+        /* Flexbox Class */
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 20px;
+            background-color: #fff;
+            max-width: 900px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
@@ -24,43 +132,45 @@
     <!-- Main Content Section -->
     <main id="main-content">
         <section>
-            <h1>Instructions</h1>
+            <h1>Advanced Selectors and Display</h1>
             <p>
-                The goal of this assignment is to provide additional practice styling your website.
-                Your job is to modify some existing CSS rules and add new ones. To improve
-                accessibility, you will also add a "Skip to Main Content" capability to each page.
-                While creating your style, make sure to run the page through the
-                <a href="https://wave.webaim.org/" target="_blank">Wave validator</a> to check for
-                color contrast errors.
+                This page demonstrates advanced selectors and CSS display properties, including
+                flexbox and grid layouts.
             </p>
         </section>
 
-        <section>
-            <h2>Grading Criteria Overview</h2>
-            <p>
-                Your project will be graded by the careful examination of your code by a peer as well
-                as the
-                <a href="https://validator.w3.org/" target="_blank">The W3C Markup Validation Service Tool</a>
-                and the
-                <a href="https://wave.webaim.org/" target="_blank">WAVE Web Accessibility Evaluation Tool</a>.
-            </p>
+        <!-- Grid Section -->
+        <section class="grid">
+            <div>
+                <img src="https://via.placeholder.com/300" alt="Placeholder Image 1" />
+                <p>Image 1 Description</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300" alt="Placeholder Image 2" />
+                <p>Image 2 Description</p>
+            </div>
         </section>
 
-        <section>
-            <h2>Instructions</h2>
-            <ol>
-                <li>Create a NEW copy of your work from Homework 1.</li>
-                <li>
-                    Add a working "Skip to Main Content" link to each page by adding an ID to the
-                    main tag and then adding an anchor (a tag) earlier in the file that links to it.
-                </li>
-            </ol>
+        <!-- Flex Section -->
+        <section class="flex">
+            <div>
+                <img src="https://via.placeholder.com/100" alt="Flex Image 1" />
+                <p>Flexbox Item 1</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/100" alt="Flex Image 2" />
+                <p>Flexbox Item 2</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/100" alt="Flex Image 3" />
+                <p>Flexbox Item 3</p>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 CSS Accessibility Assignment. All rights reserved.</p>
+        <p>&copy; 2025 Advanced Selectors and Display Assignment. All rights reserved.</p>
     </footer>
 </body>
 </html>
